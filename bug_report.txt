@@ -1,1 +1,5 @@
 
+Title	Pre-con	Steps	Expected Result	Actual Result	Severity 
+Successful registration without providing capital letter in password field	Be on Registration section	"1. Provide valid username
+2. Provide a password with lower case letter, but without capital letter
+3. Click on Register btn "	error message for such case has appeared	"Successfully registered! Please, click Back to return on login page" has appeared	Low
