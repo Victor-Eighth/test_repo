@@ -4,17 +4,17 @@ numbers.forEach((element) => {
         console.log(element)
     }
   });
-  const mapArray = numbers.map((element) => {
-  return element - numbers.length;
+  const mapArray = numbers.map((element, index, array) => {
+  return element - array.length;
 });
 console.log(mapArray);
 
-const newFilter = numbers.filter((element, index) => {
-    return element > numbers[index -1];
+const newFilter = numbers.filter((element, index, array) => {
+    return element > array[index -1];
   });
   console.log(newFilter);
 
-const find = numbers.find((element, index) => {
+const find = numbers.find((element, index, array) => {
     return element == index;
   });
   console.log(find);
